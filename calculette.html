@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="calculette.css">
+  <title>Document</title>
+</head>
+<body>
+<div class="container calc">
+  <div class="rowDisplay"><div class="displayResult" id ="displayResult"></div></div>
+  <div class="rowUpdate"><div class="displayOp" id ="displayOp"></div></div>
+  <section id="keys">
+    <div class="row">
+      <button class="key btn-lg ripple" data-ripple-color="#e37a6b" id="reset">AC</button>
+      <button class="key ripple" data-ripple-color="#e37a6b" id="clear">C</button>
+      <button class="key ripple key-op" data-ripple-color="#e37a6b" data-ops="divide">/</button>
+    </div>
+    <div class="row">
+      <button class="key ripple key-num" data-ripple-color="#e37a6b" data-num="7">7</button>
+      <button class="key ripple key-num" data-ripple-color="#e37a6b"data-num="8">8</button>
+      <button class="key ripple key-num" data-ripple-color="#e37a6b" data-num="9">9</button>
+      <button class="key ripple key-op" data-ripple-color="#e37a6b" data-ops="multiply">X</button>
+
+    </div>
+    <div class="row">
+      <button class="key ripple key-num" data-ripple-color="#e37a6b" data-num="4">4</button>
+      <button class="key ripple key-num" data-ripple-color="#e37a6b" data-num="5">5</button>
+      <button class="key ripple key-num" data-ripple-color="#e37a6b" data-num="6">6</button>
+      <button class="key ripple key-op" data-ripple-color="#e37a6b" data-ops="add">+</button>
+
+    </div>
+    <div class="row">
+      <button class="key ripple key-num" data-ripple-color="#e37a6b" data-num="1">1</button>
+      <button class="key ripple key-num" data-ripple-color="#e37a6b" data-num="2">2</button>
+      <button class="key ripple key-num" data-ripple-color="#e37a6b" data-num="3">3</button>
+        <button class="key ripple key-op" data-ripple-color="#e37a6b" data-ops="substract">-</button>
+
+    </div>
+    <div class="row">
+      <button class="key btn-lg ripple key-num" data-ripple-color="#e37a6b" data-num="0">0</button>
+      <button class="key ripple key-num" data-ripple-color="#e37a6b" data-num=".">.</button>
+      <button class="key ripple" data-ripple-color="#e37a6b" id="equal" data-result=""><div class="circle">=</div></button>
+    </div>
+
+  </section>
+</div>
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script src="calculette.js"></script>
+
+
+</body>
+</html>
